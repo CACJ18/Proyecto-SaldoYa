@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de cliente</title>
+  <link rel="shortcut icon" href="Img/Logo.ico">
+  <script src="jquery/jquery-3.6.0.min.js"></script>
+  <script rel="javascript" type="text/javascript" src="js/ScriptRegistrarCliente.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap-5.1.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Estilos/estilo_index.css">
+  <script rel="javascript" type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <div id="contenedor">
+    <div id="cabecera">
+      <nav class="navbar navbar-expand-sm navbar-light rounded-pill" style="background-color: #f0e36f;">
+        <div class="container-fluid">
+          <a class="navbar-brand" title="inicio" href="index.html"><img src="Img/logo.png" width="200" height="100"
+              alt="Pagina de inicio" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="" href="Login.html">Iniciar sesion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="info">
+      <div id="formulario">
+        <form id="itemsForm" class="row g-3">
+          <div class="col-8">
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Nombre Completo</label>
+              <input  type="text" class="form-control" id="NombreCliente" placeholder="Ingrese el nombre completo">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Tipo de documento</label>
+              <select id="tipoDocumento" class="form-select" aria-label="Default select example">
+                <option value="1" selected>Cedula de ciudadania</option>
+                <option value="2">Tarjeta de identidad</option>
+                <option value="3">Cedula de extranjeria</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Numero de documento</label>
+              <input type="text" class="form-control" id="NumeroDocumento" placeholder="">
+            </div>
+          </div>
+          <div class="col-8">
+            <label for="inputEmail4" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo">
+          </div>
+          <div class="col-8">
+            <label for="inputPassword4" class="form-label">Contraseña</label>
+            <input id="contraseña" type="password" class="form-control" >
+          </div>
+          <div class="col-8">
+            <label for="inputAddress" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="telefono" placeholder="Por favor ingrese su telefono" >
+          </div>
+          <div class="col-8">
+            <label for="inputAddress" class="form-label">Direccion</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Por favor ingrese su direccion">
+          </div>
+          <div class="col-8">
+            <label for="inputAddress" class="form-label">Seleccione su sexo</label>
+            <select id="sexo" class="form-select" aria-label="Default select example">
+              <option value="1" selected>Masculino</option>
+              <option value="2">Femenino</option>
+              <option value="3">Otro</option>
+            </select>
+          </div>
+
+          
+          <div class="col-8">
+            <button id="registrarse" type="submit" class="btn btn-primary">Registrarse</button>
+            <button id="iniciarSesion"  type="button" class="btn btn-primary" onclick="window.location.href='login.html'">Iniciar sesion</button>
+          </div>
+        </form>
+      </div>
+      
+
+      
+    </div>
+      <div class="descripcion">
+        <h1 class="titulo" style="text-align: center;"> CONTÁCTENOS </h1>
+        <br>
+        <h2 style="text-align: center;"> CORREO: SALDOYA!@GMAIL.COM </h2>
+        <br>
+        <h2 style="text-align: center;"> TWITTER: @SALDOYA! </h2>
+      </div>
+
+
+  </div>
+</body>
+
+</html>
